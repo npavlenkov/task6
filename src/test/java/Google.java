@@ -27,5 +27,6 @@ public class Google {
         $x("//input[@id = 'text']").setValue("Gradle").pressEnter();
 
         // Проверить, что Selenide появился в результатах поиска
-        //$("#search").shouldHave(text("gradle.org"));
+        $x("//div[@class = 'main__center']").shouldHave(text("gradle.org"));
+    }
 }
